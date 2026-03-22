@@ -1,0 +1,253 @@
+📁 Folder Structure
+project/
+  index.html
+  topic1.html
+  topic2.html
+  concepts.html
+  references.html
+  about.html
+  style.css
+
+🏠 index.html (Homepage)
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My IT3203 Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="topic1.html">Topic 1</a>
+  <a href="topic2.html">Topic 2</a>
+  <a href="concepts.html">Key Concepts</a>
+  <a href="references.html">References</a>
+  <a href="about.html">About</a>
+</nav>
+
+<header>
+  <h1>FinTech & Cybersecurity</h1>
+  <p>This website explores financial technology and security.</p>
+</header>
+
+<section>
+  <h2>Key Terms</h2>
+  <ul>
+    <li>Blockchain</li>
+    <li>Cybersecurity</li>
+    <li>Digital Payments</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Table of Contents</h2>
+  <ol>
+    <li>Topic 1</li>
+    <li>Topic 2</li>
+    <li>Concepts</li>
+  </ol>
+</section>
+
+<footer>
+  This is a class project –
+  <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
+</footer>
+
+</body>
+</html>
+
+📄 topic1.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Topic 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="topic1.html">Topic 1</a>
+  <a href="topic2.html">Topic 2</a>
+  <a href="concepts.html">Key Concepts</a>
+  <a href="references.html">References</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>Topic 1: Digital Payments</h1>
+
+<p>Digital payments allow users to send money electronically.</p>
+
+<img src="https://via.placeholder.com/300" alt="Digital Payment">
+
+<table border="1">
+  <tr>
+    <th>Method</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>Mobile Pay</td>
+    <td>Apple Pay</td>
+  </tr>
+</table>
+
+<footer>
+  This is a class project –
+  <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
+</footer>
+
+</body>
+</html>
+
+📄 concepts.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Key Concepts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="topic1.html">Topic 1</a>
+  <a href="topic2.html">Topic 2</a>
+  <a href="concepts.html">Key Concepts</a>
+  <a href="references.html">References</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>Key Concepts</h1>
+
+<ul>
+  <li>Blockchain – decentralized ledger</li>
+  <li>Encryption – data protection</li>
+  <li>Authentication – verifying identity</li>
+  <li>Cloud Computing – remote services</li>
+  <li>AI in FinTech – automation</li>
+</ul>
+
+<footer>
+  This is a class project –
+  <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
+</footer>
+
+</body>
+</html>
+
+📄 references.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>References</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="topic1.html">Topic 1</a>
+  <a href="topic2.html">Topic 2</a>
+  <a href="concepts.html">Key Concepts</a>
+  <a href="references.html">References</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>References</h1>
+
+<ul>
+  <li><a href="https://www.mckinsey.com">McKinsey FinTech</a></li>
+  <li><a href="https://www.ibm.com">IBM Security</a></li>
+</ul>
+
+<footer>
+  This is a class project –
+  <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
+</footer>
+
+</body>
+</html>
+
+📄 about.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="topic1.html">Topic 1</a>
+  <a href="topic2.html">Topic 2</a>
+  <a href="concepts.html">Key Concepts</a>
+  <a href="references.html">References</a>
+  <a href="about.html">About</a>
+</nav>
+
+<h1>About Me</h1>
+
+<p>My name is Jose. I am studying IT and FinTech.</p>
+
+<footer>
+  This is a class project –
+  <a href="https://ksuweb.github.io/IT3203/">IT3203</a>
+</footer>
+
+</body>
+</html>
+
+🎨 style.css
+/* Element selector */
+body {
+  font-family: Arial;
+  margin: 0;
+  background-color: #111;
+  color: white;
+}
+
+/* Class selector */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* ID selector */
+#main {
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  background: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Hover effect */
+nav a:hover {
+  color: cyan;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+}
