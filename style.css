@@ -78,7 +78,7 @@ button {
 
 /* Class selector */
 .correct {
-  color: #4cff88;
+  color: #35f675;
   font-weight: bold;
 }
 
@@ -162,7 +162,7 @@ td {
 }
 
 th {
-  background-color: #2a2a2a;
+  background-color: #2825e7;
 }
 
 /* Inputs and buttons */
