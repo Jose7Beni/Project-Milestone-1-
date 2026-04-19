@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #eef5ff;
-  color:#0b2545;
+  color:#0b71ee;
   line-height: 1.6;
 }
 
@@ -40,7 +40,7 @@ button {
 
 /* Class selector */
 .card {
-  background-color: #1b1b1b;
+  background-color: #f70808;
   border: 1px solid #444;
   border-radius: 10px;
   padding: 20px;
@@ -108,7 +108,7 @@ nav {
   gap: 12px;
   background-color: #222;
   padding: 15px;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #e619b6;
 }
 
 /* Navigation links */
@@ -125,7 +125,7 @@ nav a:hover,
 a:hover,
 button:hover {
   color: #00e5ff;
-  border-color: #00e5ff;
+  border-color: #091213;
 }
 
 /* General links */
@@ -172,7 +172,7 @@ input[type="text"] {
   max-width: 400px;
   padding: 10px;
   margin-top: 10px;
-  border: 1px solid #555;
+  border: 1px solid #f11515;
   border-radius: 6px;
   background-color: #222;
   color: #fff;
@@ -181,7 +181,7 @@ input[type="text"] {
 button {
   background-color: #222;
   color: #fff;
-  border: 1px solid #555;
+  border: 1px solid #33de19;
   padding: 10px 16px;
   border-radius: 6px;
   cursor: pointer;
@@ -192,6 +192,6 @@ footer {
   text-align: center;
   padding: 16px;
   border-top: 1px solid #333;
-  background-color: #181818;
+  background-color: #5c97e0;
   margin-top: 20px;
 }
