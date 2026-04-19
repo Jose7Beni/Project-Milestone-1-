@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | FinTech and Cybersecurity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main navigation menu -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="topic1.html">Topic 1</a>
+    <a href="topic2.html">Topic 2</a>
+    <a href="concepts.html">Key Concepts</a>
+    <a href="references.html">References</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main class="content-page">
+    <header id="main">
+      <h1>Self-Assessment Quiz</h1>
+      <p>
+        Complete this quiz to test your understanding of the FinTech and
+        cybersecurity topics presented on this website.
+      </p>
+    </header>
+
+    <!-- Quiz form -->
+    <form id="quizForm" class="quiz-form">
+      <section class="card">
+        <h2>Question 1: Fill in the blank</h2>
+        <label for="q1">
+          FinTech stands for financial ________.
+        </label>
+        <input type="text" id="q1" name="q1" placeholder="Enter your answer">
+      </section>
+
+      <section class="card">
+        <h2>Question 2: Multiple choice</h2>
+        <p>Which of the following is an example of a digital payment method?</p>
+        <label><input type="radio" name="q2" value="cash"> Cash</label>
+        <label><input type="radio" name="q2" value="applepay"> Apple Pay</label>
+        <label><input type="radio" name="q2" value="check"> Paper Check</label>
+        <label><input type="radio" name="q2" value="coins"> Coins</label>
+      </section>
+
+      <section class="card">
+        <h2>Question 3: Multiple choice</h2>
+        <p>Which security method adds an extra verification step to log in?</p>
+        <label><input type="radio" name="q3" value="firewall"> Firewall</label>
+        <label><input type="radio" name="q3" value="multifactor"> Multi-factor authentication</label>
+        <label><input type="radio" name="q3" value="browser"> Browser tab</label>
+        <label><input type="radio" name="q3" value="monitor"> Monitor screen</label>
+      </section>
+
+      <section class="card">
+        <h2>Question 4: Multiple choice</h2>
+        <p>What does encryption do?</p>
+        <label><input type="radio" name="q4" value="delete"> Deletes data forever</label>
+        <label><input type="radio" name="q4" value="sort"> Sorts files alphabetically</label>
+        <label><input type="radio" name="q4" value="protect"> Converts data into coded form</label>
+        <label><input type="radio" name="q4" value="print"> Prints data</label>
+      </section>
+
+      <section class="card">
+        <h2>Question 5: Multi-selection</h2>
+        <p>Select all common cybersecurity threats:</p>
+        <label><input type="checkbox" name="q5" value="phishing"> Phishing</label>
+        <label><input type="checkbox" name="q5" value="ransomware"> Ransomware</label>
+        <label><input type="checkbox" name="q5" value="sunlight"> Sunlight</label>
+        <label><input type="checkbox" name="q5" value="databreach"> Data breach</label>
+      </section>
+
+      <div class="quiz-buttons">
+        <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+        <button type="reset" onclick="resetQuiz()">Retake / Reset</button>
+      </div>
+    </form>
+
+    <!-- Results shown here -->
+    <section id="results" class="card results-box hidden">
+      <h2>Quiz Results</h2>
+      <div id="summary"></div>
+      <div id="details"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      This is a class project for
+      <a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203</a>.
+    </p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
