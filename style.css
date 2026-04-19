@@ -1,11 +1,10 @@
 style.css
-
 /* Element selector */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: #eef5ff;
-  color:#0b71ee;
+  color: #0b2545;
   line-height: 1.6;
 }
 
