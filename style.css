@@ -1,5 +1,4 @@
-style.css
-/* Element selector */
+/* ================= BASE ================= */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -8,21 +7,15 @@ body {
   line-height: 1.6;
 }
 
-/* Element selector */
-h1,
-h2 {
-  color: #0c033c;
+h1, h2 {
+  color: #0d47a1;
 }
 
-p,
-li,
-label,
-input,
-button {
+p, li, label, input, button {
   font-size: 1rem;
 }
 
-/* Class selector */
+/* ================= LAYOUT ================= */
 .page-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -30,168 +23,169 @@ button {
   padding: 20px;
 }
 
-/* Class selector */
 .content-page {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Class selector */
 .card {
-  background-color: #dc1ae2;
-  border: 1px solid #524d4d;
+  background-color: #ffffff;
+  border: 1px solid #90caf9;
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-/* Class selector */
 .wide-card {
   grid-column: 1 / -1;
 }
 
-/* Class selector */
 .image-note {
-  font-size: 0.95rem;
-  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-/* Class selector */
-.quiz-form label {
-  display: block;
-  margin: 10px 0;
-}
-
-/* Class selector */
-.quiz-buttons {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-/* Class selector */
-.results-box {
-  margin-top: 20px;
-}
-
-/* Class selector */
-.correct {
-  color: #35f675;
-  font-weight: bold;
-}
-
-/* Class selector */
-.incorrect {
-  color: #ff6b6b;
-  font-weight: bold;
-}
-
-/* Class selector */
-.hidden {
-  display: none;
-}
-
-/* ID selector */
-#main {
-  text-align: center;
-  padding: 30px 20px 10px 20px;
-}
-
-/* Navigation using flex */
+/* ================= NAV ================= */
 nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  background-color: #222;
+  background-color: #0d47a1;
   padding: 15px;
-  border-bottom: 2px solid #e619b6;
 }
 
-/* Navigation links */
 nav a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   padding: 8px 12px;
-  border: 1px solid transparent;
   border-radius: 6px;
 }
 
-/* Hover effect */
-nav a:hover,
-a:hover,
-button:hover {
-  color: #00e5ff;
-  border-color: #091213;
+nav a:hover {
+  background-color: #1565c0;
 }
 
-/* General links */
+/* ================= LINKS ================= */
 a {
-  color: #7fdfff;
+  color: #1565c0;
 }
 
-/* Lists */
-ul,
-ol {
-  padding-left: 20px;
-}
-
-/* Images */
+/* ================= IMAGES ================= */
 img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #555;
   border-radius: 8px;
-  margin-top: 10px;
 }
 
-/* Table */
+/* ================= TABLE ================= */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  display: block;
+  overflow-x: auto;
 }
 
-th,
-td {
-  border: 1px solid #555;
-  padding: 12px;
-  text-align: left;
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 th {
   background-color: #0d47a1;
-  color: #ffffff;
+  color: white;
 }
 
-/* Inputs and buttons */
+/* ================= QUIZ ================= */
+.quiz-form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.quiz-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.results-box {
+  margin-top: 20px;
+}
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ================= INPUTS ================= */
 input[type="text"] {
   width: 100%;
-  max-width: 400px;
   padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #f11515;
   border-radius: 6px;
-  background-color: #222;
-  color: #fff;
+  border: 1px solid #ccc;
 }
 
 button {
-  background-color: #222;
-  color: #fff;
-  border: 1px solid #33de19;
-  padding: 10px 16px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  padding: 10px;
   border-radius: 6px;
   cursor: pointer;
 }
 
-/* Footer */
+button:hover {
+  background-color: #1565c0;
+}
+
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
-  padding: 16px;
-  border-top: 1px solid #333;
-  background-color: #5c97e0;
-  margin-top: 20px;
+  padding: 15px;
+  background-color: #0d47a1;
+  color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
 }
